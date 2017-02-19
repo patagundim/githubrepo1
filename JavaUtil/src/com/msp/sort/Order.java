@@ -1,5 +1,5 @@
 package com.msp.sort;
-
+//This is order class
 public class Order implements Comparable<Order> {
 private int id;
 private float price;
