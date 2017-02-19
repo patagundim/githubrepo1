@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Hello World" default="info">
+	<property file="build.properties" />
+	<!-- <property name="site.name" value="www.google.com"></property> -->
+	<patternset id="custom.pattern">
+		<include name="**/*.java"></include>
+		<exclude name="**/*.*"></exclude>
+	</patternset>
+	<target name="info">
+		<fileset dir="${src}">
+			<patternset refid="custom.pattern"></patternset>
+		</fileset>
+		<echo>This is my first Project ${ant.version} and ${ant.java.version}.
+			${proj.owner}</echo>
+	</target>
+</project>
